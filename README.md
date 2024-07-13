@@ -66,7 +66,7 @@ contributions are welcome! if you would like to contribute to this project
 - *DANIEL FEKEDE* - [GITHUB LINK](https://github.com/ljdan1)
 
 ## license
-This project is licenced the [MIT license](licence)
+This project is licenced the [MIT license](LICENSE)
 
    
 
