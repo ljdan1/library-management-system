@@ -1,3 +1,5 @@
+           '''librarian username=librarian     password=password'''
+
 import os
 
 class Library:
@@ -96,8 +98,8 @@ class Library:
                 break
             else:
                 print("You entered a wrong number. Please try again.")
-            input("Press Enter to continue...")  # Adding pause before clearing the screen again
-            os.system("cls" if os.name == "nt" else "clear")  # Clearing the screen
+            input("Press Enter to continue...")  
+            os.system("cls")  
     
     def student_menu(self):
         while True:
@@ -116,30 +118,27 @@ class Library:
                 break
             else:
                 print("You entered a wrong number. Please try again.")
-            input("Press Enter to continue...")  # Adding pause before clearing the screen again
-            os.system("cls" if os.name == "nt" else "clear")  # Clearing the screen
+            input("Press Enter to continue...")  
+            os.system("cls") 
 
-def main():
-    library = Library()
-    while True:
-        print("-----------------------------------------------------------------------------")
-        print("                *** Welcome to our library ***")
-        print("-----------------------------------------------------------------------------")
-        print("1. Librarian Login")
-        print("2. Student Login")
-        print("0. Exit")
-        choice = int(input("Enter your choice: "))
-        if choice == 1:
-            library.librarian_login()
-        elif choice == 2:
-            library.student_login()
-        elif choice == 0:
-            print("You have finished. Thank you. Goodbye!")
-            break
-        else:
-            print("You entered a wrong number. Please try again.")
-        input("Press Enter to continue...")  # Adding pause before clearing the screen again
-        os.system("cls" if os.name == "nt" else "clear")  # Clearing the screen
 
-if __name__ == "__main__":
-    main()
+library = Library()
+while True:
+    print("-----------------------------------------------------------------------------")
+    print("                *** Welcome to our library ***")
+    print("-----------------------------------------------------------------------------")
+    print("1. Librarian Login")
+    print("2. Student Login")
+    print("0. Exit")
+    choice = int(input("Enter your choice: "))
+    if choice == 1:
+        library.librarian_login()
+    elif choice == 2:
+        library.student_login()
+    elif choice == 0:
+        print("You have finished. Thank you. Goodbye!")
+        break
+    else:
+        print("You entered a wrong number. Please try again.")
+    input("Press Enter to continue...")  
+    os.system("cls") 
